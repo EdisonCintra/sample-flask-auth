@@ -18,7 +18,8 @@ def login():
     password = data.get("password")
 
     if login and password:
-        pass
+        return jsonify({"message": "Autenticação realizada com sucesso."})
+
 
     return jsonify({"message": "Credenciais inválidas."}), 400
 
